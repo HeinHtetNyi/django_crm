@@ -1,0 +1,13 @@
+<form method="POST" action="{% url 'home' %}">
+    {% csrf_token %}
+    <p class="fs-4">Login</p>
+    <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Username" name="username">
+    </div>
+    <div class="mb-3">
+        <input type="password" class="form-control" placeholder="Password" name="password">
+    </div>
+    <div class="mb-3">
+        <button type="submit" class="btn btn-dark">Login</button>
+    </div>
+</form>
